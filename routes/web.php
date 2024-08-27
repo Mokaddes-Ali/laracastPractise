@@ -12,7 +12,19 @@ Route::get('/about', function () {
 });
 
 Route::get('/service', function () {
-    return view('service');
+    return view('service',
+    [
+        'services' => [
+            'Service 1',
+            'Service 2',
+            'Service 3',
+            'Service 4',
+            'Service 5',
+            'Service 6',
+        ]
+    ]);
+
+);
 });
 
 
